@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Recorder.js demo with record, stop and pause - addpipe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Neurologue.ai demo</h1>
+    <br>
+    <br>
+    <img src="https://www.researchgate.net/profile/Julian-Fritsch-2/publication/330713870/figure/fig1/AS:742601967804418@1554061514807/Cookie-Theft-image-used-for-descriptive-tasks.ppm" alt="COOKIE" width="500"
+         height="300">
+     <p> Prompt: Describe the image that you see here </p>
+
+    <div id="controls">
+     <button id="recordButton">Record</button>
+     <button id="pauseButton" disabled>Pause</button>
+     <button id="stopButton" disabled>Stop</button>
+    </div>
+    <div id="formats">Format: start recording to see sample rate</div>
+    <p><strong>Recordings:</strong></p>
+    <ol id="recordingsList"></ol>
+    
+
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="/static/js/app.js"></script>
+    
+
+    <!-- -->
+    <form action="http://localhost:5000/predict" method="post">
+      <button type="submit" class="btn btn-primary btn-block btn-large">Find out your cognitive health!</button>
+    </form>
+    <br>
+    {{ prediction_text }}
+    
+  </body>
+</html>
