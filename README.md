@@ -1,2 +1,2 @@
-# neurologue.ai
-MEDesign project
+# Neurologue.ai
+MEDesign Project
